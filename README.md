@@ -1,5 +1,5 @@
 # FirePalo
-FirePalo helps you convert rules and objects from Cisco FirePower to Palo Alto
+FirePalo (Windows GUI) helps you convert rules and objects from Cisco FirePower to Palo Alto
 
 Run "show access-control-config" from the FTD device and save output to a textfile.
 Open the textfile in FirePalo.exe and it will create editable objects.
