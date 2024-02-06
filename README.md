@@ -24,3 +24,5 @@ This binds everything to the correct rules and all edits will be in place when y
 You can then look through the result as a treeview and make more changes if needed (and then doing a new commit).
 
 When everything looks good, you can generate the final configuration in SET format and paste it into the Palo Alto device or Panorama CLI.
+
+https://www.linkedin.com/pulse/migrating-firepower-palo-alto-j%25C3%25B8rgen-lanesskog-d4gyf
