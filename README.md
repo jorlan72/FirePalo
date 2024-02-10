@@ -1,4 +1,4 @@
-# FirePalo
+# FirePalo (version 0.4.1.6)
 FirePalo (Windows GUI) helps you convert rules and objects from Cisco FirePower to Palo Alto
 
 (See the "Sceenshots from the application.docx")
