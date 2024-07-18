@@ -2343,8 +2343,8 @@ end;
 
 procedure GenerateCLIURLEntries(rootNodeName, foundChildName: string);
 begin
-  if pos('[', foundChildName) > 0 then frmMain.MemoPaloCLI.Lines.Add(CommandString + rootNodeName + '" category ' + foundChildName) else
-   frmMain.MemoPaloCLI.Lines.Add(CommandString + rootNodeName + '" category "' + foundChildName + '"');
+  if pos('[', foundChildName) > 0 then frmMain.MemoPaloCLI.Lines.Add(CommandString + rootNodeName + '" category ' + trim(foundChildName)) else
+   frmMain.MemoPaloCLI.Lines.Add(CommandString + rootNodeName + '" category "' + trim(foundChildName) + '"');
 end;
 
 procedure GenerateCLITag(rootNodeName, foundChildName: string);
@@ -2849,7 +2849,7 @@ begin
             members := members + ' ' + GroupList.Strings[j];
           end;
         members := ' [' + members + ' ]';
-        frmMain.MemoPaloCLI.Lines.Add(CommandString + value + members);
+        frmMain.MemoPaloCLI.Lines.Add(CommandString + value + ' static ' + members);
       end;
 end;
 
@@ -2874,7 +2874,7 @@ begin
             members := members + ' ' + GroupList.Strings[j];
           end;
         members := ' [' + members + ' ]';
-        frmMain.MemoPaloCLI.Lines.Add(CommandString + value + members);
+        frmMain.MemoPaloCLI.Lines.Add(CommandString + value + ' members ' + members);
       end;
 end;
 
